@@ -1,0 +1,285 @@
+/* root - i missed some sass variables */
+:root {
+    /* Colors - hovers */
+    --link-hover: #ffffff;
+    --link-hover2:#F0B96E;
+
+    /* Colors */
+    --blue: #1B1A47;
+    --purpleblue: #2A2547;
+    --yellow: #F0B96E;
+    --lightgreen:#E3EEE8;
+    --gradientblue: linear-gradient(50deg, #E1ECE7, #94A6CF);
+
+    /* fonts */
+    --font1: "segoe UI", calibri light, sans-serif;
+    --font2:"'Roboto', sans-serif;",calibri light, sans-serif;
+    --hellofont:'Montserrat', sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box; /* -webkit- browserunderstøttelse */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen mv. */
+}
+
+body {
+    margin: 0;
+    background: var(--yellow);
+    font-family: var(--font2);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font2);
+    color: var(--purpleblue);
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+li {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.grid-container.fluid {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    padding-bottom: 4vw !important;
+}
+
+.email-link {
+    align-self: center;
+    margin-right: auto;
+    background: var(--blue);
+    color: var(--yellow) !important;
+    padding: 20px 20px !important;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.5 !important;
+}
+
+.email-link:hover {
+    background: var(--link-hover);
+    color: var(--yellow) !important;
+ }
+.home-link {
+    background: white;
+    color: var(--blue) !important;
+    padding: 20px 20px !important;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.5 !important;
+}
+.home-link:hover {
+       background: var(--blue);
+       color: white !important;
+}
+
+.fronttext {
+    top: -70px;
+    z-index: 3;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+}
+
+.fronttext h1 {
+    margin-bottom: 0;
+    font-family: var(--hellofont);
+    font-size: 108px;
+    font-weight: bolder;
+    bottom: 80px;
+    width: 100%;
+}
+.fronttext p {
+    font-size:  1.4rem;
+    font-weight: bolder;
+    padding-left: 7px;
+    color: var(--blue) !important;
+}
+.textbox {
+    font-weight: bold;
+    background: white;
+    color: var(--blue);
+    margin-right: 20px;
+}
+.textbox p {
+    font-size:  1.4rem;
+    font-weight: bolder;
+    padding-left: 12px;
+    padding-top: 9px;
+    padding-bottom: 15px;
+}
+.cta {
+    align-self: center;
+    margin-right: auto;
+    background: #f0967b;
+    color: var(--blue) !important;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-family: var(--font1);
+    border: solid transparent;
+    font-weight: 400;
+    border-radius: 0;
+    line-height: 1.5;
+}
+.cta:hover {
+     background: var(--link-hover);
+ }
+.imgprofile {
+    margin-top: 20px;
+}
+.imgcircle {
+    width: 80%;
+    border-radius: 50%;
+    z-index: 1 !important;
+}
+.circle {
+    background: var(--gradientblue);
+    width: 40vw;
+    height: 38vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 115px;
+    top: 97px;
+    z-index: -1;
+}
+.circles {
+    width: 50vw;
+    height: 50vw;
+    background: var(--gradientblue);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.fa, .fas {
+    font-size: 20vw;
+    color: white;
+}
+
+.Texts h2{
+    padding-left: 7px;
+    font-weight: bold;
+    padding-top: 3rem !important;
+    font-size: 1.5rem;
+}
+.Texts p {
+    font-size: 1.4rem;
+    font-weight: normal;
+    padding-left: 7px;
+}
+.Texts b {
+    font-size: 1.4rem;
+    padding-left: 7px;
+}
+.info {
+    justify-content: center;
+    padding-top: 3rem !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+.Texts a {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    padding-left: 7px;
+    color: #0a0a0a;
+}
+.Texts a:hover {
+    background: var(--yellow);
+}
+
+.title {
+    font-size: 50px !important;
+    font-weight: bolder;
+    font-family: var(--hellofont);
+    background: white;
+    padding: 20px 20px;
+    margin: 6rem 10vw 2rem;
+}
+.card {
+    border:0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.text-main {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: var(--font1);
+}
+.text-dark p {
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+.line {
+     font-size: 0.8rem;
+     position: relative;
+     padding: 0;
+ }
+.fab {
+    color: black !important;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.footer-icon {
+    padding-top: 3rem !important;
+}
+
+.fab:hover {
+    color: var(--link-hover2) !important;
+}
+
+.work .fab:hover {
+    color: white !important;
+}
+@media screen and (max-width: 39.9375em) {
+    h1 {
+        font-size: 75px;
+    }
+    .circle {
+          width: 74vw;
+          height: 71vw;
+          border-radius: 50%;
+          position: absolute;
+          right: -53px;
+          top: 97px;
+          z-index: -1;
+    }
+}
+@media screen and (min-width: 40em) {
+    .circles {
+        width: 30vw;
+        height: 30vw;
+        background: var(--gradientblue);
+        border-radius: 50%;
+    }
+    .fa, .fas {
+        font-size: 10vw;
+        left: -11px;
+        top: -17px;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .fronttext p {
+        font-size: 1.5em;
+    }
+
+}
